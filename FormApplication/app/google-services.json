@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "739563140646",
+    "firebase_url": "https://formapplication-84b19-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "formapplication-84b19",
+    "storage_bucket": "formapplication-84b19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739563140646:android:e31ba8cda8b291499f18e7",
+        "android_client_info": {
+          "package_name": "com.formapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739563140646-m5aahl5ejf87es24bmdqm5bjqelsm9i3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.formapplication",
+            "certificate_hash": "3ed5f1c3d0361962fb50f0085d39b14ea2dc359c"
+          }
+        },
+        {
+          "client_id": "739563140646-j45hensj9c2nqhnr5hv4avce93nm9f56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG9r1_3WoTd9D7aSeQdh6AHjEFiZM6tPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739563140646-j45hensj9c2nqhnr5hv4avce93nm9f56.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

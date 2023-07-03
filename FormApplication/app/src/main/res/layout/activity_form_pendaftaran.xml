@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FormPendaftaranActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. Pendaftaran:"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtNoPendaftaran"
+                android:hint="Masukkan No Pendaftaran"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_weight="1"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Program Studi yang dipilih:"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinProdi"
+                android:spinnerMode="dropdown"
+                android:popupBackground="@color/white"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Siswa:"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtNamaSiswa"
+                android:hint="Masukkan Nama Siswa"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_weight="1"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin:"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbLakilaki"
+                    android:text="Laki-laki"
+                    android:textSize="@dimen/_8ssp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbPerempuan"
+                    android:text="Perempuan"
+                    android:textSize="@dimen/_8ssp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempat Lahir:"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtTempatLahir"
+                android:hint="Masukkan Tempat Lahir"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_weight="1"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir:"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtTanggalLahir"
+                android:hint="dd/mm/yyyy"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_weight="1"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agama:"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinAgama"
+                android:spinnerMode="dropdown"
+                android:popupBackground="@color/white"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat Lengkap:"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtAlamatLengkap"
+                android:hint="Masukkan alamat lengkap"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_weight="1"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Telepon:"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtNoTelepon"
+                android:hint="Masukkan no telepon"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_weight="1"
+                android:inputType="phone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-mail:"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtEmail"
+                android:hint="Masukkan e-mail"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDaftar"
+                android:text="Daftarkan"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:background="@android:color/holo_green_dark"
+                android:layout_marginRight="@dimen/_10sdp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnReset"
+                android:text="Reset"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:background="@android:color/holo_red_dark"
+                android:layout_marginLeft="@dimen/_10sdp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
